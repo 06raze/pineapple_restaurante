@@ -1,0 +1,319 @@
+/*
+  Turno/Turma: 3º ANO - Informática - Matutino
+  Grupo: PineApple
+  Discentes:
+
+    -- Eduarda Negreiros Silva;
+    -- Filipe Silva Rodrigues de Almeida;
+    -- Karla Sophia Polgar Rocha;
+    -- Théo Tavernard da Rocha Machado;
+    -- Victor Lopes Rios.
+
+*/
+
+
+main{
+    background:#091c2a;
+}
+
+main div.title{
+    text-align: center;
+    text-transform: capitalize;
+    color:rgb(255, 255, 255);
+    padding-top:30px;
+    margin-bottom: 10px;
+}
+
+main div.title h4{
+    color:rgb(255, 165, 0);
+    padding-top: 40px;
+}
+
+main div.title h2{
+    padding-bottom: 30px;
+}
+
+main #quem_somos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.detail{
+    width: 409px;
+    padding: 25px;
+    text-indent: 3ch;
+}
+
+div.detail h1{
+    color:#fff;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+div.detail p{
+    color:#fff;
+    padding-bottom: 5px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+section#quem_somos>.img-about{
+    width: 420px;
+    height: 255px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    background: url('../img/about-img.jpg');
+}
+
+section#quem_somos img{
+    border-radius: 10px;
+}
+
+.saiba {
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1em;
+    border: 2px solid #C78C19;
+    background-color: transparent;
+    padding: 6px 16px;
+    color: #C78C19;
+    border-radius: 20px;
+    transition: background-color .3s ease;
+}
+
+.saiba a {
+    color: #C78C19;
+}
+
+.saiba:hover {
+    color: rgba(253, 143, 0, 0.719);
+    border: 2px solid rgb(253, 143, 0, 0.719);
+}
+
+@media screen and (max-width: 752px) {
+    #quem_somos .detail h1 {
+        text-align: center;
+    }
+
+    #quem_somos .detail p {
+        text-align: center;
+    }
+
+    .img-about{
+        display: none;
+    }
+
+    .saiba {
+        margin-inline: 32%;
+        display: flex;
+    }
+}
+
+
+/*--------------------------QUEM SOMOS?------------------------------*/
+
+
+#quem_somos .detail h1 p {
+    margin-top: 2%;
+    margin-right: 05%;
+    margin-left: 05%;
+}
+
+#quem_somos .detail p {
+    text-align: justify;
+    
+}
+
+/* (Inicio) - Deixa "Quem somos?" Responsiva - Tira a Imagem */
+
+@media screen and (max-width: 752px) {
+    #quem_somos .detail h1 {
+        text-align: center;
+    }
+
+    #quem_somos .detail p {
+        text-align: center;
+    }
+
+    .img-about{
+        display: none;
+    }
+}
+
+/* (Fim) - Deixa "Quem somos?" Responsiva - Tira a Imagem */
+
+
+/*--------------------------RESERVA------------------------------*/
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #C78C19;
+
+}
+
+td, th {
+    border: 1px solid #fff9ea;
+    padding: 10px;
+    vertical-align: middle;
+
+}
+
+th {
+    color: orange;
+
+}
+
+table .tdcod_center {
+    text-align: center;
+    font-weight: bold;
+    width: 15%;
+
+}
+
+table .tddes_justy {
+    text-align: justify;
+    width: 85%;
+
+}
+
+tr {
+    color: #fff9ea;
+
+}
+
+#table_RFeRNF{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    gap: 80px;
+    margin-right: 20%;
+    margin-left: 20%;
+    
+}
+
+.r_funcionais {
+    padding: 0% 14%;
+
+}
+
+.r_naofuncionais {
+    padding: 0% 14%;
+
+}
+
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#C78C19;
+    padding: 15px;
+
+}
+
+tbody > tr:hover {
+    background-color: #11293aca;
+
+}
+
+
+
+/*table td.leia {
+    text-align: center;
+    font-weight: bold;
+}
+
+ tbody > .leia td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.a {
+    align-items: center;} */
+
+@media screen and (max-width: 800px) {
+    #table_RFeRNF{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    
+    #table_RFeRNF .r_funcionais,
+    .r_naofuncionais {
+        padding: 0% 0%;
+
+    }
+
+}
+
+/*--------------------------EQUIPE------------------------------*/
+
+#integrantes_equipe .testemunials {
+    padding-bottom: 60px;
+}
+
+.container {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.fundo {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 10px;
+    margin-top: -60px;  
+    margin-right: 15px; 
+    margin-left: 4px;
+}
+
+.fundo h3, .fundo h5 {
+    background-color: #091c2a;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.fundo h3 {
+    text-align: center;
+    color:#C78C19;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fundo h5 {
+    color: #fff9ff;;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1300px) {
+    .fundo {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container.espacando {
+        height: 5vh;
+        width: 98vw;
+        margin: auto;
+        padding-bottom: 5px;
+    }
+
+}

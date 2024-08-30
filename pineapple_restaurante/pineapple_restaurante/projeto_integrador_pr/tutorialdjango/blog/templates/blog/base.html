@@ -1,0 +1,501 @@
+<!--
+  Turno/Turma: 3º ANO - Informática - Matutino
+  Grupo: PineApple
+  Discentes:
+
+    - Eduarda Negreiros Silva;
+    - Filipe Silva Rodrigues de Almeida;
+    - Karla Sophia Polgar Rocha;
+    - Théo Tavernard da Rocha Machado;
+    - Victor Lopes Rios.
+
+-->
+
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Home - PineApple Restaurante</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/home.css' %}" rel="stylesheet">
+  <link href="{% static 'css/nav-bar.css' %}" rel="stylesheet">
+  <link href="{% static 'css/menu.css' %}" rel="stylesheet">
+  <link href="{% static 'blog/reserva.html' %}" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script defer src="{% static 'js/script.js' %}"></script>
+
+
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="/" class="logo"><img src="{% static 'img/logo.png' %}"></a>
+      <button class="hamburguer"></button>
+      <ul class="nav-list">
+        <li class="nav_item"><a href="#inicio">Início</a></li>
+        <li class="nav_item"><a href="#quem_somos">Quem somos?</a></li>
+        <li class="nav_item"><a href="#menu">Cardápio</a></li>
+        <li class="nav_item"><a href="reserva">Reserva</a></li>
+        <li class="nav_item"><a href="#integrantes_equipe">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+
+      <div class="text-header">
+        <p>Do campo para sua mesa, o <strong>abacaxi</strong> é a estrela dos nossos pratos.</p>
+        <button class="leia"><a href="#quem_somos">Leia Mais</a></button>
+      </div>
+    
+    </section>
+
+    <div class="title">
+        <h4>Nossa história</h4>
+        <h2>Quem somos?</h2>
+    </div>
+
+    <section id="quem_somos">
+      <div class="detail">
+          <h1>Bem-vindo ao PineApple Restaurante</h1>
+          <p>
+            Estamos animados em apresentar a nossa mais recente solução para atender às demandas crescentes do nosso restaurante: um site que melhora o acesso às reservas e ao cardápio, garantindo um atendimento eficiente e sem complicações para vocês, clientes.</p>
+          <p>
+            <strong>Venha aproveitar, da melhor forma, o PineApple Restaurante!</strong>
+          </p>
+          <button class="saiba"><a href="#integrantes_equipe">Nossa Equipe</a></button>
+      </div>
+      <div class="img-about"></div>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Cardápio</h2>
+      <p class="section-subtitle">Entradas</p>
+
+      <div id="dishes">
+        <div class="dish">
+          <!--<div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>-->
+
+          <img src="{% static 'img/dish.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Bruschetta com Abacaxi Grelhado
+          </h3>
+
+          <span class="dish-description">
+            Pão italiano torrado, coberto com queijo de cabra cremoso, abacaxi grelhado e redução de balsâmico.
+          </span>
+
+          <!--<div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>-->
+
+          <div class="dish-price">
+            <h4>R$32,90</h4>
+            <!--<button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>-->
+          </div>
+        </div>
+
+        <div class="dish">
+          <!--<div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>-->
+
+          <img src="{% static 'img/dish2.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Ceviche de Peixe com Abacaxi
+          </h3>
+
+          <span class="dish-description">
+            Cubos de peixe branco marinados no limão, com abacaxi, cebola roxa, coentro e pimenta dedo-de-moça.
+          </span>
+
+          <!--<div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>-->
+
+          <div class="dish-price">
+            <h4>R$38,90</h4>
+            <!--<button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>-->
+          </div>
+        </div>
+
+        <div class="dish">
+          <!--<div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>-->
+
+          <img src="{% static 'img/dish3.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Salada Tropical de Abacaxi
+          </h3>
+
+          <span class="dish-description">
+            Mix de folhas verdes, pedaços de abacaxi, manga, cenoura ralada, pepino e vinagrete de maracujá.
+          </span>
+
+          <!--<div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>-->
+
+          <div class="dish-price">
+            <h4>R$29,90</h4>
+            <!--<button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>-->
+          </div>
+        </div>
+
+        <div class="dish">
+          <!--<div class="dish-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>-->
+
+          <img src="{% static 'img/dish4.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Carpaccio de Abacaxi com Rúcula e Mel
+          </h3>
+
+          <span class="dish-description">
+            Fatias finas de abacaxi, servidas com rúcula fresca, lascas de parmesão e toque de mel.
+          </span>
+
+          <!--<div class="dish-rate">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(500+)</span>
+          </div>-->
+
+          <div class="dish-price">
+            <h4>R$26,00</h4>
+            <!--<button class="btn-default">
+              <i class="fa-solid fa-basket-shopping"></i>
+            </button>-->
+          </div>
+        </div>
+      </div>
+    
+
+      <h1 class="section-subtitle">Pratos Principais</h1>
+
+      <div id="dishes">
+        <div class="dish">
+
+          <img src="{% static 'img/pp.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Frango ao Molho de Abacaxi e Gengibre
+          </h3>
+
+          <span class="dish-description">
+            Filé de frango grelhado com molho de abacaxi e gengibre, acompanhado de arroz de coco e legumes salteados.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$49,90</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/pp2.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Risoto de Camarão com Abacaxi e Coco
+          </h3>
+
+          <span class="dish-description">
+            Risoto cremoso com camarão, pedaços de abacaxi e leite de coco, finalizado com coentro fresco.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$64,90</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/pp3.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Hambúrguer Tropical
+          </h3>
+
+          <span class="dish-description">
+            Pão artesanal, hambúrguer de carne bovina, queijo cheddar, abacaxi grelhado, alface, tomate e molho especial. Acompanhado de batatas rústicas.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$42,90</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/pp4.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Salmão com Crosta de Ervas e Purê de Abacaxi
+          </h3>
+
+          <span class="dish-description">
+            Salmão grelhado com crosta de ervas, servido com purê de abacaxi e legumes ao vapor.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$69,90</h4>
+          </div>
+        </div>
+      </div>
+
+
+      <h5 class="section-subtitle">Sobremesas</h5>
+
+      <div id="dishes">
+        <div class="dish">
+
+          <img src="{% static 'img/sobremesa.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Torta Gelada de Abacaxi e Coco
+          </h3>
+
+          <span class="dish-description">
+            Camadas de creme de abacaxi e coco, finalizadas com raspas de limão e hortelã.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$25,00</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/sobremesa2.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Mousse de Abacaxi com Hortelã
+          </h3>
+
+          <span class="dish-description">
+            Mousse leve e refrescante de abacaxi com hortelã, servida com calda de frutas vermelhas.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$22,00</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/sobremesa3.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Sorvete de Abacaxi com Pimenta Rosa
+          </h3>
+
+          <span class="dish-description">
+            Sorvete artesanal de abacaxi, com leve toque de pimenta rosa.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$18,00</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/sobremesa4.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Tiramisu de Abacaxi e Rum
+          </h3>
+
+          <span class="dish-description">
+            Uma releitura do tiramisu tradicional, feito com camadas de biscoito champagne embebidos em rum e suco de abacaxi, intercaladas com creme de mascarpone.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$28,00</h4>
+          </div>
+        </div>
+      </div>
+
+      <h6 class="section-subtitle">Bebidas</h6>
+
+      <div id="dishes">
+        <div class="dish">
+
+          <img src="{% static 'img/bebida.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Suco Tropical de Abacaxi
+          </h3>
+
+          <span class="dish-description">
+            Suco natural de abacaxi com hortelã e água de coco.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$14,90</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/bebida2.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Smoothie de Abacaxi e Manga
+          </h3>
+
+          <span class="dish-description">
+            Smoothie cremoso de abacaxi, manga, banana e leite de coco.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$18,90</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/bebida3.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Piña Colada Clássica
+          </h3>
+
+          <span class="dish-description">
+            Coquetel refrescante de rum, leite de coco e suco de abacaxi.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$24,90</h4>
+          </div>
+        </div>
+
+        <div class="dish">
+
+          <img src="{% static 'img/bebida4.png' %}" class="dish-image" alt="">
+
+          <h3 class="dish-title">
+            Água de Coco Natural
+          </h3>
+
+          <span class="dish-description">
+            Servida diretamente no coco.
+          </span>
+
+          <div class="dish-price">
+            <h4>R$4,90</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="integrantes_equipe">
+      <div class="testemunials">
+        <h3>Nossa Equipe</h3>
+        <h2>Grupo PineApple</h2>
+      </div>
+      <div class="container">
+        <div>
+          <div class="fundo">
+              <h3>Eduarda Negreiros</h3>
+              <h5>- Programação Django</h5>
+              <h5>- Banco de Dados</h5>
+          </div>
+        </div>
+        <div class="espacando"></div>
+        <div>
+          <div class="fundo">
+              <h3>Filipe Silva</h3>
+              <h5>- Protótipo do Site</h5>
+              <h5>- Diagrama de Caso de Uso</h5>
+          </div>
+        </div>
+        <div class="espacando"></div>
+        <div>
+          <div class="fundo">
+              <h3>Karla Sophia</h3>
+              <h5>- Protótipo do Site</h5>
+              <h5>- Diagrama de Caso de Uso</h5>
+          </div>
+        </div>
+        <div class="espacando"></div>
+        <div>
+          <div class="fundo">
+              <h3>Théo Tavernard</h3>
+              <h5>- Programação Django</h5>
+              <h5>- Protótipo do Site</h5>
+          </div>
+        </div>
+        <div class="espacando"></div>
+        <div>
+          <div class="fundo">
+              <h3>Victor Lopes</h3>
+              <h5>- Programação Django</h5>
+              <h5>- Diagrama de Caso de Uso</h5>
+          </div>
+        </div>
+      </div>
+      <div class="espacando"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="espacando"></div>
+    <div>
+      <ul class="horario">
+        <li><p>Abrimos de</p></li>
+        <li><p>Segunda a Domingo</p></li>
+        <li><p>--- 11:00 - 15:00 ---</p></li>
+        <li><p>--- 18:00 - 23:00 ---</p></li>
+      </ul>
+    </div>
+    <p>&copy; 2024 - PineApple Restaurante</p>
+  </footer> 
+
+</body>
+</html>
+</html>

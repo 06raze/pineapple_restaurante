@@ -1,0 +1,125 @@
+<!--
+  Turno/Turma: 3º ANO - Informática - Matutino
+  Grupo: PineApple
+  Discentes:
+
+    - Eduarda Negreiros Silva;
+    - Filipe Silva Rodrigues de Almeida;
+    - Karla Sophia Polgar Rocha;
+    - Théo Tavernard da Rocha Machado;
+    - Victor Lopes Rios.
+
+-->
+
+
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>{{reserva.cod_reserva}} - Reserva</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/home.css' %}" rel="stylesheet">
+        <link href="{% static 'css/nav-bar.css' %}" rel="stylesheet">
+        <link href="{% static 'blog/base.html' %}" rel="stylesheet">
+        <link href="{% static 'blog/reserva_list.html' %}" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--jQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script defer src="{% static 'js/script.js' %}"></script>
+        
+    
+    </head>
+    <body>
+
+        <header>
+            <nav class="nav">
+                <a href="/" class="logo"><img src="{% static 'img/logo.png' %}"></a>
+                <button class="hamburguer"></button>
+                <ul class="nav-list">
+                    <li class="nav_item"><a href="javascript:void(-1);" onclick="history.go(-2);">Home</a></li>
+                    <li class="nav_item"><a href="javascript:void(0);" onclick="history.back();">Voltar</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+
+            <section id="reserva">
+
+                <div class="testemunials">
+                    <h3>Reserva</h3>
+                    <h2>Mais Informações</h2>
+                </div>
+
+                <div id="table_RFeRNF">
+                    <div class="r_funcionais">
+
+                        <table>
+
+                            <caption>Detalhes - Reserva {{reserva.cod_reserva}}</caption>
+
+                            <thead>
+
+                                <tr>
+                                    <th scope="col">Código da Reserva</th>
+                                    <th scope="col">Data</th>
+                                    <th scope="col">Horário</th>
+                                    <th scope="col">Quantidade de Pessoas</th>
+                                    <th scope="col">Tempo de Tolerância de Atraso (min)</th>
+                                    <th scope="col">Código do Cliente</th>
+
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td class="tdcod_center"> <a> {{ reserva.cod_reserva }}</a></td>
+                                    <td class="tddes_justy"> <a> {{ reserva.data_reserva }}</a></td>
+                                    <td class="tddes_justy"> <a> {{ reserva.horario_reserva }}</a></td>
+                                    <td class="tddes_justy"> <a> {{ reserva.qtd_pessoas }}</a></td>
+                                    <td class="tddes_justy"> <a> {{ reserva.tempo_tolerancia }}</a></td>
+                                    <td class="tdcod_center"> <a> {{ reserva.cod_cliente }}</a></td>
+                                    
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                </div>
+
+                <div class="espacando"></div>
+                <div class="espacando"></div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="espacando"></div>
+            <p>&copy; 2024 - PineApple Restaurante</p>
+        
+        </footer>
+        
+    
+    </body>
+</html>
+</html>

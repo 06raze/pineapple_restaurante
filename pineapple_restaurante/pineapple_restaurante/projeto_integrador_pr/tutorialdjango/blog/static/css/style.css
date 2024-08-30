@@ -1,0 +1,192 @@
+/*
+  Turno/Turma: 3º ANO - Informática - Matutino
+  Grupo: PineApple
+  Discentes:
+
+    -- Eduarda Negreiros Silva;
+    -- Filipe Silva Rodrigues de Almeida;
+    -- Karla Sophia Polgar Rocha;
+    -- Théo Tavernard da Rocha Machado;
+    -- Victor Lopes Rios.
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('static/css/home.css');
+@import url('static/css/style.css');
+@import url('static/css/nav-bar.css');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #091c2a;
+
+}
+ 
+/*Estilizando o cabeçalho */
+
+header{
+    padding: 1px 5%;
+    background-color: #091c2a;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#inicio {
+    padding: 26px 6%;
+    background-image: url('../img/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 80vh;
+    padding-top: 10px;
+    z-index: 1;
+    position: relative;
+    color: #fff9ea;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*header div.logo{
+    margin: auto;
+    width: 85vw;
+    height: 130px;
+    display: flex;
+    justify-content: space-between; 
+    padding:5px; 
+}
+/*header div.logo img#toggle{
+    padding: 30px;
+     cursor: pointer;
+     height: 30px;
+}*/
+
+.text-header {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-header p{
+    font-style:italic;
+    /*font-weight: bold;*/
+    font-size: 2em;
+    padding-bottom: 10px;
+   
+}
+
+.leia {
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1em;
+    border: 2px solid orange;
+    background-color: transparent;
+    padding: 6px 16px;
+    color: orange;
+    border-radius: 20px;
+    transition: background-color .3s ease;
+    
+}
+
+
+.leia a {
+    color: #C78C19;
+}
+
+.leia:hover {
+    color: rgba(253, 143, 0, 0.719);
+    border: 2px solid rgb(253, 143, 0, 0.719);
+}
+
+/* Fim estilo cabeçalho */
+/* Principio do main */
+
+.testemunials{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.testemunials h3{
+    color:orange;
+    padding-top:15vh;
+}
+
+.testemunials h2{
+    color:#fff9ea;
+    padding-bottom: 10vh;
+     
+}
+
+.espacando{
+    height: 10vh;
+    width: 98vw;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+footer{
+    height: 62vh;
+    background: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.horario p {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+footer >p {
+    border-top:1px solid #0C1023;
+    width: 80vw;
+    margin:auto;
+    margin-top: 100px;
+    text-align: center;
+    align-content: center;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0;
+}
+
+
+
+
+/* .r footer{
+    height: 10vh;
+    /*background: url('../img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+} */
+
+/* .tbcenter {
+    align-items: center;
+    text-align: center;
+} */
+
+/* table tr{
+    align-items: center;
+    text-align: center;
+} */
